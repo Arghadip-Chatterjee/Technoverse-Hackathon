@@ -1,0 +1,137 @@
+/* SubscriptionsPage.css */
+.subscriptions-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .subscriptions-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .subscriptions-container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px; /* Adjust the width as needed */
+  }
+  
+  .subscription-plan {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  .plan-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    margin-left:30px;
+  }
+  
+  .plan-features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .plan-features li {
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .plan-button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .plan-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.12);
+  }
+  
+  .sign-out-button {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+
+  .sign-out-button:hover{
+    transform: scale(1.08);
+  }
+  
+  .sign-out-button:hover {
+    background-color: #1976d2;
+  }
+
+  .razorpay{
+    margin-left: 30px;
+  }
+
+
+  /* Media queries for responsiveness */
+
+@media (min-width: 600px) {
+    .subscriptions-container {
+      max-width: 1000px; /* Adjust the max-width as needed */
+    }
+  
+    .subscription-plan {
+      width: calc(50% - 10px); /* Two plans side by side with some margin */
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .subscription-plan {
+      width: calc(33.33% - 10px); /* Three plans side by side with some margin */
+    }
+  }
+
+  /* Media queries for responsiveness */
+
+@media (max-width: 599px) {
+    .subscriptions-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .subscriptions-page{
+        overflow-x: hidden;
+    }
+  
+    .subscription-plan {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+
+    .plan-features{
+        padding-left: 15%;
+    }
+
+    .plan-button{
+        margin-left: 10%;
+    }
+
+    .sign-out-button{
+        font-size: 23px;
+    }
+
+
+  }
+  

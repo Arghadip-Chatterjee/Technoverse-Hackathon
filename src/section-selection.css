@@ -1,0 +1,27 @@
+.section-selection-container {
+    text-align: center;
+  }
+  
+  .section-selection-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: white;
+  }
+  
+  .section-selection-button {
+    background-color: rgba(255, 0, 0, 0.627);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 18px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .section-selection-button:hover {
+    background-color: darkred;
+  }
+  

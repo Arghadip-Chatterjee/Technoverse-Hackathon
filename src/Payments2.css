@@ -1,0 +1,26 @@
+.heading{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.HomePage-Button{
+    font-size: 20px;
+    padding:5px;
+    cursor: pointer;
+    background-color: rgb(83, 156, 246);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.HomePage-Button:hover{
+    transform: scale(1.12);
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.payment{
+    margin: auto;
+    text-align: center;
+}

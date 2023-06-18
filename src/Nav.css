@@ -1,0 +1,154 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 30px;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav_logo{
+    width: 80px;
+    position: fixed;
+    left: 20px;
+    object-fit: contain;
+}
+
+.nav_avatar{
+    width: 4%;
+    position: fixed;
+    right: 2%;
+    top: 3%;
+    object-fit: contain;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.nav_black{
+    background-color: #111;
+}
+
+.nav_searchbar {
+    position: fixed;
+    top: 3%;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    padding: 5px 10px;
+    width: 33%;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+  
+  .nav_searchbar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    background-color: transparent;
+  }
+  
+  .nav_searchbar input::placeholder {
+    color: #888;
+  }
+  
+  .nav_searchbar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+  
+  .nav_searchbar button:hover {
+    opacity: 0.7;
+  }
+
+  .nav_searchbar:hover{
+    cursor: pointer;
+  }
+
+  .nav_dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .nav_dropdownContent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 8px;
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  .nav_dropdownContent ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav_dropdownContent ul li {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav_dropdownContent ul li:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .nav_dropdownContent button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav_dropdownContent button:hover {
+    background-color: #b2070a;
+    cursor: pointer;
+  }
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .nav_avatar {
+    width: 8%;
+    right: 5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav_avatar {
+    width: 10%;
+    right: 2%;
+    top: 3%;
+  }
+}
+
+
+  
+
+  

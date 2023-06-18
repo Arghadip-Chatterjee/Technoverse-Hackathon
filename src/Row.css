@@ -1,0 +1,217 @@
+/* .row_poster {
+    object-fit: contain;
+    max-height: 150px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin-right: 10px; /* Add right margin between posters 
+}
+  
+
+.row_posters {
+  display: flex;
+  overflow-x: scroll; /* Use "scroll" to always show the scrollbar 
+  overflow-y: hidden;
+  padding: 20px;
+  margin-left: -20px; /* Add negative margin to compensate for padding 
+  scrollbar-width: thin; /* Use "thin" or "auto" depending on your preference 
+  scrollbar-color: white; /* Change the color of the scrollbar thumb 
+}
+
+.row_posters::-webkit-scrollbar {
+  height: 8px; /* Set the height of the scrollbar 
+}
+
+.row_posters::-webkit-scrollbar-track {
+  background-color: transparent; /* Change the background color of the scrollbar track 
+}
+
+.row_posters::-webkit-scrollbar-thumb {
+  background-color: white; /* Change the color of the scrollbar thumb to white  
+}
+
+.row_posters::-webkit-scrollbar-thumb:hover {
+  background-color: #dddddd; /* Change the color of the scrollbar thumb on hover 
+}
+
+
+.row_poster:hover{
+    transform: scale(1.08);
+}
+
+/* .row_posters::-webkit-scrollbar{
+    display: none;
+} 
+
+.row_posterLarge{
+    max-height: 300px;
+}
+
+.row_posterLarge:hover{
+    transform: scale(1.12);
+}
+
+.row{
+    margin-left: 20px;
+    color: white;
+    margin-right: 20px;
+}
+
+
+
+.movie_rating {
+    font-size: 14px;
+    color: white;
+}
+
+.load_more_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .load_more_button button {
+    background-color: #f44336;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .load_more_button button:hover {
+    background-color: #d32f2f;
+  }
+ */
+
+ .row_poster {
+  object-fit: contain;
+  max-height: 150px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  margin-right: 10px; /* Add right margin between posters */
+}
+
+.row_posters {
+  display: flex;
+  overflow-x: auto; /* Use "auto" to show the scrollbar only when necessary */
+  overflow-y: hidden;
+  padding: 20px;
+  margin-left: -20px; /* Add negative margin to compensate for padding */
+  scrollbar-width: thin; /* Use "thin" or "auto" depending on your preference */
+  scrollbar-color: white; /* Change the color of the scrollbar thumb */
+}
+
+.row_posters::-webkit-scrollbar {
+  height: 8px; /* Set the height of the scrollbar */
+}
+
+.row_posters::-webkit-scrollbar-track {
+  background-color: transparent; /* Change the background color of the scrollbar track */
+}
+
+.row_posters::-webkit-scrollbar-thumb {
+  background-color: white; /* Change the color of the scrollbar thumb to white */
+  border-radius: 4px; /* Add border radius to the scrollbar thumb */
+}
+
+.row_posters::-webkit-scrollbar-thumb:hover {
+  background-color: #dddddd; /* Change the color of the scrollbar thumb on hover */
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.row_posterLarge {
+  max-height: 300px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.12);
+}
+
+.row {
+  margin-left: 20px;
+  color: white;
+  margin-right: 20px;
+}
+
+.row h2{
+  padding-top: 1.2%;
+}
+
+.movie_rating {
+  font-size: 14px;
+  color: white;
+}
+
+.load_more_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.load_more_button button {
+  background-color: #f44336;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.load_more_button button:hover {
+  background-color: #d32f2f;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .row_posters {
+      padding: 10px;
+  }
+
+  .row_poster {
+      margin-right: 5px;
+  }
+
+  .row {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .row h2{
+    padding-top: 2.5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .row_posters {
+      padding: 5px;
+  }
+
+  .row_poster {
+      margin-right: 2px;
+  }
+
+  .row {
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+
+  .row h2{
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+  }
+}
+
+
+ 
