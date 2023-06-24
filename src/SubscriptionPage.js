@@ -189,9 +189,9 @@ function SubscriptionsPage() {
         Sign Out
       </button>
 
-      <button className="sign-out-button" onClick={Home}>
+      {/* <button className="sign-out-button" onClick={Home}>
         Home
-      </button>
+      </button> */}
     </div>
   );
 }
