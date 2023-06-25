@@ -111,6 +111,7 @@ import SectionSelection from './section-selection';
 import SubscriptionsPage from './SubscriptionPage';
 import Payments1 from './Payments1';
 import Payments2 from './Payments2';
+import FeedbackForm from './feedback';
 
 function App() {
   const [selectedSection, setSelectedSection] = useState('');
@@ -136,6 +137,7 @@ function App() {
           <Route path="/subscriptions" element={<SubscriptionsPage/>} />
           <Route path="/payment1" element={<Payments1/>} />
           <Route path="/payment2" element={<Payments2/>} />
+          <Route path="/feedback" element={<FeedbackForm/>} />
         </Routes>
       </div>
     </Router>

@@ -101,6 +101,10 @@ function Nav() {
       });
   };
 
+  const feedback=()=>{
+    navigate('/feedback');
+  }
+
   return (
     <div className={`nav ${show && 'nav_black'}`}>
       <img
@@ -116,7 +120,7 @@ function Nav() {
         {/* <SearchButton /> Render the SearchButton component here */}
       </div>
 
-      <div className="nav_dropdown" onClick={signOut}>
+      <div className="nav_dropdown" onClick={feedback}>
         <img
           className="nav_avatar"
           src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
