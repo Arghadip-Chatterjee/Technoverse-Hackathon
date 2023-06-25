@@ -14,3 +14,6 @@ This is the Main Home Page where after Clicking on One Movie/TV Series the youtu
 ![image](https://github.com/Arghadip-Chatterjee/Technoverse-Hackathon/assets/114013720/fe63e6ba-a7b7-4f63-9fc8-6c66fc18b38e)
 This is the Search page where Voice Search Feature is also there. 
 Clicking on the avatar Profile Picture we get Feedback Form and Sign Out button also. 
+The User will get an Email Reagrding Razorpay Payment and Feedback Form Also
+
+Tech Stack :- Reactjs, Emailjs, Firebase, Razorpay, TMDB API, Voice Search, react-youtube, movie-trailer
